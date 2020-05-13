@@ -1,0 +1,443 @@
+//IMPORTING FONTS
+
+@font-face {
+    font-family: 'Vinkel';
+    src: url('../fonts/Vinkel-Regular.otf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Vinkel';
+    src: url('../fonts/Vinkel-Bold.otf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Vinkel';
+    src: url('../fonts/Vinkel-Light.otf');
+    font-weight: 300;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+* {
+    font-family: 'Vinkel';
+}
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: linear-gradient(#e4007c, #E4007C);
+    max-width:1920px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color:#E4007C;
+    font-weight: bold;
+}
+
+header {
+    padding: 0 20px;
+    margin: 0 150px;
+    height:100px;
+    position: relative;
+    z-index:5;
+
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+
+    a {
+        color:white !important;
+        font-size:14px;
+        letter-spacing: 2px;
+        line-height:20px;
+        text-decoration: none;
+        
+        &:hover {
+            text-decoration: none;
+        }
+
+    
+    }
+   
+    .building {
+        display:block;
+        width:40px;
+        height:40px;
+        background:white;
+        margin-left:15px;
+    }
+    .logo {
+        font-weight:bold;
+        font-size:18px;
+        margin-left:10px;
+        letter-spacing: 0px;
+       
+    }
+}
+
+    .background__landing {
+        position: absolute;
+        top:-300px;
+        overflow:hidden;
+        object-fit: cover;
+        max-width: 2300px;
+        max-height:130vh;
+        left:50%;
+        transform: translateX(-50%);
+        
+        .overlay {
+            height:20%;
+            width:100%;
+            position: absolute;
+            background: linear-gradient(rgba(228, 0, 124, .01), rgba(228, 0, 124, 1));
+            bottom:0;
+
+        }
+
+        img {
+            filter: blur(10px) grayscale(100%);
+            width:100vw;
+            max-width:2300px;
+            margin: 0 -60px;
+        }
+    }
+
+    @media only screen and (max-width:1920px) {
+        .background__landing {
+            img {
+                margin: 0;    
+            }
+            }
+    }
+.section {
+    background: white;
+    margin: 20px 150px;
+    padding: 90px 190px 100px 190px;
+    position: relative;
+    min-height:850px;
+
+    /*img {
+        width:40%;
+        right: 0;
+    }*/
+
+    .subtitle {
+        font-weight:normal;
+        color:black;
+    }
+}
+
+
+.title-main {
+    margin-top:90px;
+    font-weight:bold;
+    font-size: 4.5em;
+    width:300px;
+    color:#E4007C;
+}
+
+.landing__content {
+    font-size:1.5em;
+    line-height: 40px;
+    font-weight: 300;
+}
+
+.content {
+    font-size:18px;
+    //letter-spacing:.2rem;
+    line-height:2rem;
+    * { max-width: 700px;}
+}
+.button__cta {
+    text-transform: uppercase;
+    color:#E4007C;
+    font-weight:600;
+    padding: 10px 20px;
+    border: 3px solid #E4007C;
+    border-radius:24px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: all .1s linear;
+    outline: none;
+
+    &:focus {
+        outline:none;
+    }
+    &:hover {
+        background:#E4007C;
+        color:white;
+        text-decoration: none;
+    }
+
+}
+.landing__image {
+    width:50%;
+    right: -50px;
+    top:-50px;
+    position: absolute;
+    overflow:hidden;
+    height:100%;
+    
+    img {
+        filter: hue-rotate(40deg) grayscale(20%);
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        object-position:right;
+        
+    }
+}
+.addEvent {
+    form {
+        padding:0px 50px;
+        label {
+            margin-top:20px;
+        }
+        input {
+            max-height:50px;
+        }
+        input,button {
+            display:block;
+            width:100%;
+            border-radius:24px;
+            border: 4px solid #f2f2f2;
+            padding: 10px 30px;
+            
+            &:focus {
+                outline:none;
+                
+                border: 4px solid #E4007C;
+            }
+        }
+        button {
+            margin-top:20px;
+            border: 4px solid darken(#f2f2f2,10%);
+            background: darken(#f2f2f2,10%);
+            font-weight: 600;
+            letter-spacing: 2px;
+            color: rgba(0,0,0,.6);
+        }
+        input[type="submit"] {
+            margin-top:20px;
+            letter-spacing: 2px;
+            width:180px;
+            border:none;
+            background:#E4007C;
+            color:white;
+            font-weight:600;
+        }
+        input[type="checkbox"] {
+            width:30px;
+        }
+        a,input[type="checkbox"] {
+                display:inline-block;
+        }
+    }
+}
+.contestant {
+    max-width: 280px;
+    margin: 10px;
+    display:inline-block;
+
+    .contestant__information-title {
+        font-family: 'Roboto', sans-serif;
+        margin-top:20px;
+        color: #4a4a4a;
+    }
+    .contestant__information-name {
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 1.75px;
+        line-height: 16px;
+    }
+    
+    img {
+        height:280px;
+        width:280px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .actions {
+        margin-top:20px;
+        width:100%;
+        display:flex;
+        background: #d8d8d8;
+        border-radius: 24px;
+        transition: all .1s ease-in;
+        &:hover {
+            background: darken(#d8d8d8, 10%);
+        }
+        button {
+            height:48px;
+            border-radius: 24px;
+            border:none;
+            font-weight: bold;
+            padding: 5px 0;
+            transition: all .1s ease-in;
+            letter-spacing: 2px;
+            line-height: 23px;
+        }
+        
+        .vote {
+            width: 60%;
+            border: 3px solid #E4007C;
+            color: #E4007C;
+
+            &:focus {
+                outline:none;
+            }
+            i {
+                margin-left:5px;
+                font-weight:bold;
+                font-size:20px;
+            }
+            
+            &:hover {
+                .actions {
+                    background: #d8d8d8;
+                }
+                color:white;
+                background: #E4007C;
+            }
+            
+        }
+        .share {
+            width: 40%;
+            background: #d8d8d8;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+            color: #555;
+            
+            &:hover {
+                color: #555;
+                background: darken(#d8d8d8, 10%);
+            }
+        }
+    }
+}
+.wrapper__column-left {
+    max-width:550px;
+}
+@media only screen and (max-width: 1300px) {
+    .wrapper__column-left {
+        max-width:100%;
+    }
+
+    .section {
+    margin: 10px;
+    padding: 0px;
+    }
+}
+.styled-button {
+    display:block;
+    left:50%;
+    transform:translateX(-50%);
+    position: absolute;
+    bottom:0;
+}
+.events {
+    padding: 0px 60px 50px 60px;
+}
+
+.rules {
+    * {color:black;}
+
+    .middle {
+        font-size:14px;
+        line-height:25px;
+    }
+}
+
+.landing {
+    .section {
+        padding: 90px 120px 100px 120px;
+    }
+}
+.pagination {
+    *{
+        text-decoration:none;
+        &:hover {
+            text-decoration:none;
+        }
+    }
+    position: absolute;
+    bottom:0;
+    left:50%;
+    transform:translate(-50%);
+    
+
+    .page-numbers {
+        font-weight:bold;
+        font-size:24px;
+        margin-left:10px;
+        margin-right:10px;
+        color: #d8d8d8;
+    }
+
+    .current {
+        color:#E4007C !important;
+        
+    }
+}
+
+.swiper-pagination-bullet-active {
+    color:#E4007C;
+}
+.swiper-pagination-bullet {
+    font-size: 24px;
+    width:20px;
+    height:20px;
+    background:none;
+    font-family: 'Vinkel' !important;
+    font-weight: bold;
+
+}
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width:100%;
+  }
+  
+  .btn {
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 24px;
+    font-size: 20px;
+    font-weight: bold;
+    width:100%;
+    display:block;
+    max-height:50px;
+    font-size:16px;
+}
+
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    width:100%;
+    display:block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+  .terms {
+      color:#E4007C;
+      text-decoration: underline;
+      &:hover {
+          color:#E4007C;
+      }
+  }
+  footer {
+      h5 {
+          color:white !important;
+      }
+  }

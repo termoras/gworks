@@ -1,0 +1,480 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@font-face {
+  font-family: 'Vinkel';
+  src: url("../fonts/Vinkel-Regular.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Vinkel';
+  src: url("../fonts/Vinkel-Bold.otf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Vinkel';
+  src: url("../fonts/Vinkel-Light.otf");
+  font-weight: 300;
+}
+
+* {
+  font-family: 'Vinkel';
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e4007c), to(#E4007C));
+  background: linear-gradient(#e4007c, #E4007C);
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #E4007C;
+  font-weight: bold;
+}
+
+header {
+  padding: 0 20px;
+  margin: 0 150px;
+  height: 100px;
+  position: relative;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+header a {
+  color: white !important;
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: none;
+}
+
+header .building {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: white;
+  margin-left: 15px;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 10px;
+  letter-spacing: 0px;
+}
+
+.background__landing {
+  position: absolute;
+  top: -300px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 2300px;
+  max-height: 130vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.background__landing .overlay {
+  height: 20%;
+  width: 100%;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(228, 0, 124, 0.01)), to(#e4007c));
+  background: linear-gradient(rgba(228, 0, 124, 0.01), #e4007c);
+  bottom: 0;
+}
+
+.background__landing img {
+  -webkit-filter: blur(10px) grayscale(100%);
+          filter: blur(10px) grayscale(100%);
+  width: 100vw;
+  max-width: 2300px;
+  margin: 0 -60px;
+}
+
+@media only screen and (max-width: 1920px) {
+  .background__landing img {
+    margin: 0;
+  }
+}
+
+.section {
+  background: white;
+  margin: 20px 150px;
+  padding: 90px 190px 100px 190px;
+  position: relative;
+  min-height: 850px;
+  /*img {
+        width:40%;
+        right: 0;
+    }*/
+}
+
+.section .subtitle {
+  font-weight: normal;
+  color: black;
+}
+
+.title-main {
+  margin-top: 90px;
+  font-weight: bold;
+  font-size: 4.5em;
+  width: 300px;
+  color: #E4007C;
+}
+
+.landing__content {
+  font-size: 1.5em;
+  line-height: 40px;
+  font-weight: 300;
+}
+
+.content {
+  font-size: 18px;
+  line-height: 2rem;
+}
+
+.content * {
+  max-width: 700px;
+}
+
+.button__cta {
+  text-transform: uppercase;
+  color: #E4007C;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: 3px solid #E4007C;
+  border-radius: 24px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
+  outline: none;
+}
+
+.button__cta:focus {
+  outline: none;
+}
+
+.button__cta:hover {
+  background: #E4007C;
+  color: white;
+  text-decoration: none;
+}
+
+.landing__image {
+  width: 50%;
+  right: -50px;
+  top: -50px;
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+}
+
+.landing__image img {
+  -webkit-filter: hue-rotate(40deg) grayscale(20%);
+          filter: hue-rotate(40deg) grayscale(20%);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
+}
+
+.addEvent form {
+  padding: 0px 50px;
+}
+
+.addEvent form label {
+  margin-top: 20px;
+}
+
+.addEvent form input {
+  max-height: 50px;
+}
+
+.addEvent form input, .addEvent form button {
+  display: block;
+  width: 100%;
+  border-radius: 24px;
+  border: 4px solid #f2f2f2;
+  padding: 10px 30px;
+}
+
+.addEvent form input:focus, .addEvent form button:focus {
+  outline: none;
+  border: 4px solid #E4007C;
+}
+
+.addEvent form button {
+  margin-top: 20px;
+  border: 4px solid #d9d9d9;
+  background: #d9d9d9;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.addEvent form input[type="submit"] {
+  margin-top: 20px;
+  letter-spacing: 2px;
+  width: 180px;
+  border: none;
+  background: #E4007C;
+  color: white;
+  font-weight: 600;
+}
+
+.addEvent form input[type="checkbox"] {
+  width: 30px;
+}
+
+.addEvent form a, .addEvent form input[type="checkbox"] {
+  display: inline-block;
+}
+
+.contestant {
+  max-width: 280px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.contestant .contestant__information-title {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 20px;
+  color: #4a4a4a;
+}
+
+.contestant .contestant__information-name {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1.75px;
+  line-height: 16px;
+}
+
+.contestant img {
+  height: 280px;
+  width: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.contestant .actions {
+  margin-top: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #d8d8d8;
+  border-radius: 24px;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
+}
+
+.contestant .actions:hover {
+  background: #bfbfbf;
+}
+
+.contestant .actions button {
+  height: 48px;
+  border-radius: 24px;
+  border: none;
+  font-weight: bold;
+  padding: 5px 0;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
+  letter-spacing: 2px;
+  line-height: 23px;
+}
+
+.contestant .actions .vote {
+  width: 60%;
+  border: 3px solid #E4007C;
+  color: #E4007C;
+}
+
+.contestant .actions .vote:focus {
+  outline: none;
+}
+
+.contestant .actions .vote i {
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.contestant .actions .vote:hover {
+  color: white;
+  background: #E4007C;
+}
+
+.contestant .actions .vote:hover .actions {
+  background: #d8d8d8;
+}
+
+.contestant .actions .share {
+  width: 40%;
+  background: #d8d8d8;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  color: #555;
+}
+
+.contestant .actions .share:hover {
+  color: #555;
+  background: #bfbfbf;
+}
+
+.wrapper__column-left {
+  max-width: 550px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .wrapper__column-left {
+    max-width: 100%;
+  }
+  .section {
+    margin: 10px;
+    padding: 0px;
+  }
+}
+
+.styled-button {
+  display: block;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  bottom: 0;
+}
+
+.events {
+  padding: 0px 60px 50px 60px;
+}
+
+.rules * {
+  color: black;
+}
+
+.rules .middle {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.landing .section {
+  padding: 90px 120px 100px 120px;
+}
+
+.pagination {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.pagination * {
+  text-decoration: none;
+}
+
+.pagination *:hover {
+  text-decoration: none;
+}
+
+.pagination .page-numbers {
+  font-weight: bold;
+  font-size: 24px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #d8d8d8;
+}
+
+.pagination .current {
+  color: #E4007C !important;
+}
+
+.swiper-pagination-bullet-active {
+  color: #E4007C;
+}
+
+.swiper-pagination-bullet {
+  font-size: 24px;
+  width: 20px;
+  height: 20px;
+  background: none;
+  font-family: 'Vinkel' !important;
+  font-weight: bold;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 24px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+  display: block;
+  max-height: 50px;
+  font-size: 16px;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.terms {
+  color: #E4007C;
+  text-decoration: underline;
+}
+
+.terms:hover {
+  color: #E4007C;
+}
+
+footer h5 {
+  color: white !important;
+}
+/*# sourceMappingURL=app.css.map */
