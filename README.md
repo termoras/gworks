@@ -57,9 +57,13 @@ Mitä olisin halunnut tehdä:
 
 
   -Siivota koodia
+
   -Kommentoida koodia
+
   -Saada kilpailun lisäyksen toimimaan ajaxilla, kuvan lataus osoittautui haasteeksi, ajalla mahdollisesti olisi auennut että miten hoituu. FormData(?)
+
   -Muuttaa kaiken ACF kentiksi, jotta sivu tosiaan olisi muokattavissa. Hirveän ajanpuutteen takia jouduin osan koodaamaan suoraan teemaan.
+
   -Muuttaa tuo sivu templateksi
 
 
