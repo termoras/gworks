@@ -1,3 +1,6 @@
+// Tämä ei varsinaisesti liity viimeiseen "tuotteeseen"
+// Tällä lisättiin REST API:n kautta kilpailu mutta kaatu siihen että en saanut kuvaa mukaan.
+
 jQuery( document ).ready( function ( $ ) {
 
     var fd = new FormData();
