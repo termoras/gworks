@@ -22,8 +22,7 @@ Bugit:
 - "Äänestä" nappia hoveramalla muuttuu myös toisen taustan väri.
 
 Mitä olisin halunnut tehdä:
--Siivota koodia
--Kommentoida koodia
--Saada kilpailun lisäyksen toimimaan ajaxilla, kuvan lataus osoittautui haasteeksi
--Muuttaa kaiken ACF kentiksi, jotta sivu tosiaan olisi muokattavissa.
-Hirveän ajanpuutteen takia jouduin osan koodaamaan 
+  - Siivota koodia
+  - Kommentoida koodia
+  - Saada kilpailun lisäyksen toimimaan ajaxilla, kuvan lataus osoittautui haasteeksi
+  - Muuttaa kaiken ACF kentiksi, jotta sivu tosiaan olisi muokattavissa. Hirveän ajanpuutteen takia jouduin osan koodaamaan 
