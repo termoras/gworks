@@ -46,11 +46,9 @@ Bugit:
 
 
 
-  Kilpailun lisäämisen jälkeen vika "section" menee piiloon jostain syystä. (PHP)
+  -Kilpailun lisäämisen jälkeen vika "section" menee piiloon jostain syystä. (PHP)
 
-
-
-  "Äänestä" nappia hoveramalla muuttuu myös toisen taustan väri. (CSS)
+  -"Äänestä" nappia hoveramalla muuttuu myös toisen taustan väri. (CSS)
 
 
 
@@ -58,22 +56,11 @@ Mitä olisin halunnut tehdä:
 
 
 
-  Siivota koodia
-
-
-
-  Kommentoida koodia
-
-
-
-  Saada kilpailun lisäyksen toimimaan ajaxilla, kuvan lataus osoittautui haasteeksi, ajalla mahdollisesti olisi auennut että miten hoituu. FormData(?)
-
-
-
-  Muuttaa kaiken ACF kentiksi, jotta sivu tosiaan olisi muokattavissa. Hirveän ajanpuutteen takia jouduin osan koodaamaan suoraan teemaan.
-
-  
-  Muuttaa tuo sivu templateksi
+  -Siivota koodia
+  -Kommentoida koodia
+  -Saada kilpailun lisäyksen toimimaan ajaxilla, kuvan lataus osoittautui haasteeksi, ajalla mahdollisesti olisi auennut että miten hoituu. FormData(?)
+  -Muuttaa kaiken ACF kentiksi, jotta sivu tosiaan olisi muokattavissa. Hirveän ajanpuutteen takia jouduin osan koodaamaan suoraan teemaan.
+  -Muuttaa tuo sivu templateksi
 
 
 Lisäosilla kaikki mahd ongelmat olisi hoitunut mutta ajattelin että työn ajatus on koodaaminen 🙂
