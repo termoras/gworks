@@ -25,4 +25,4 @@ Mitä olisin halunnut tehdä:
   - Siivota koodia
   - Kommentoida koodia
   - Saada kilpailun lisäyksen toimimaan ajaxilla, kuvan lataus osoittautui haasteeksi
-  - Muuttaa kaiken ACF kentiksi, jotta sivu tosiaan olisi muokattavissa. Hirveän ajanpuutteen takia jouduin osan koodaamaan 
+  - Muuttaa kaiken ACF kentiksi, jotta sivu tosiaan olisi muokattavissa. Hirveän ajanpuutteen takia jouduin osan koodaamaan suoraan teemaan
